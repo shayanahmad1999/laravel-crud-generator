@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'My Laravel App')</title>
+    <title>My - App @yield('template_title')</title>
 
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,12 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('banks.index') }}">Banks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('users.index') }}">Users</a>
                     </li>
                     <!-- Add more nav items here -->
                 </ul>
